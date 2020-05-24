@@ -4,7 +4,7 @@ function watcher() {
     N=$(nproc)
     while sleep 0.5 ; do
 	for ((i=0;i<N;i++)) ; do
-	    echo cpu$i: $(cat /sys/devices/system/cpu/cpufreq/policy$i/scaling_cur_freq) MHz
+	    echo cpu$i: $(cat /sys/devices/system/cpu/cpufreq/policy$i/scaling_cur_freq) kHz
 	    done
 	echo
 	echo
